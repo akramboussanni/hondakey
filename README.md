@@ -2,6 +2,8 @@
 
 This is a simple ESP32 project that acts as a physical "Wake-on-LAN" key. It can trigger a WoL magic packet either to a Honda server or directly over the local network.
 
+You can download Honda at https://github.com/akramboussanni/honda
+
 ## Getting Started
 
 1.  **Hardware**: ESP32, optional OLED (SSD1306), and a button/touch sensor.
