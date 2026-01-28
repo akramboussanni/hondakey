@@ -1,0 +1,33 @@
+
+#ifndef CONFIG_H
+#define CONFIG_H
+
+// WiFi Credentials
+const char* WIFI_SSID = "SSID";
+const char* WIFI_PASSWORD = "Password";
+
+// If you are using Honda server, use these settings
+// ------------------------------------------------
+const char* SERVER_URL = "http://192.168.2.229:8000/wake"; 
+const int MACHINE_ID = 1;
+const char* MACHINE_PASSWORD = "Password";
+
+// If you are using local magic packets, use these settings
+// ------------------------------------------------
+const bool USE_LOCAL_WOL = true;
+const char* TARGET_MAC = "D8:BB:C1:53:93:33";
+
+// Hardware Configuration
+// ------------------------------------------------
+const int BUTTON_PIN = 0; // If you want to use the boot button on the ESP32, use 0
+const int LED_PIN = 2; // Don't change this normally, this is the onboard LED on ESP32 but you can change
+
+// The app supports OLED displays, if you don't have one, set this to false
+const bool USE_OLED = true;
+#define SCREEN_WIDTH 128
+#define SCREEN_HEIGHT 64
+#define OLED_RESET    -1
+#define OLED_SDA      5 // SDA Pin
+#define OLED_SCL      18 // SCL Pin
+
+#endif
