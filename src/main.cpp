@@ -100,7 +100,7 @@ void sendWOLPacket() {
   udp.write(magicPacket, 102);
   udp.endPacket();
   
-  showMessage("Packet Sent!", 2000);
+  showMessage("Sent!", 2000);
   
   for(int i=0; i<3; i++) {
         digitalWrite(LED_PIN, LOW); delay(100);
